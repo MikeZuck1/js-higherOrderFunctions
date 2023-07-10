@@ -4,7 +4,6 @@ import './style.css';
 const appDiv = document.getElementById('app');
 appDiv.innerHTML;
 
-
 const addTwo = num => {
   return num + 2;
 }
@@ -14,6 +13,5 @@ const checkConsistentOutput = (func, val) => {
   let checkB = func(val);
   return checkA === checkB ? func(val) : 'inconsistent results';  
 }
-
 console.log(checkConsistentOutput(addTwo, 10));
-// Output: inconsistent results
+// Expected output: inconsistent results
